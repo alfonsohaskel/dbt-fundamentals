@@ -10,6 +10,7 @@ with payment as (
 
     from {{ source('stripe', 'payment')}}
     
+    
 )
 
 select * from payment
